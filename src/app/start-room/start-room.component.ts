@@ -1,16 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PlayerService } from '../player.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-start-room',
   templateUrl: './start-room.component.html',
-  styleUrls: ['./start-room.component.css']
+  styleUrls: ['./start-room.component.css'],
+  providers: [PlayerService]
 })
 export class StartRoomComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private playerService: PlayerService) { }
 
   ngOnInit() {
+  }
+
+  createNewPlayer(name: string) {
+    console.log('inside component method');
+    this.playerService.newPlayer(name);
   }
 
   beginButton() {

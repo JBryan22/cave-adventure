@@ -5,6 +5,7 @@ import { EndRoomComponent } from './end-room/end-room.component';
 import { FriendlyRoomComponent } from './friendly-room/friendly-room.component';
 import { FightRoomComponent } from './fight-room/fight-room.component';
 import { DiscoveryRoomComponent } from './discovery-room/discovery-room.component';
+import { FriendlyRoomResolverComponent } from './friendly-room-resolver/friendly-room-resolver.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'discovery/:encounter',
     component: DiscoveryRoomComponent
+  },
+  {
+    path: 'friendly/resolution/:number',
+    component: FriendlyRoomResolverComponent
   }
 ];
 

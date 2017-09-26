@@ -1,1 +1,6 @@
 <button (click)="beginButton()">Begin Your Adventure!</button>
+<form>
+  <label>Name:</label>
+  <input type="text" #name>
+  <button (click)="createNewPlayer(name.value)">New Player</button>
+</form>

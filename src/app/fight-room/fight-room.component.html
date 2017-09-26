@@ -1,7 +1,11 @@
-<p>
-  fight-room works!
-</p>
+<div *ngIf="roomNumber == 1">
+  <p></p>
+</div>
 
-<button (click)="openDoorOneButton()" routerLink="">Door One</button>
+<div *ngIf="roomNumber == 2">
+  <p></p>
+</div>
 
-<button (click)="openDoorTwoButton()" routerLink="">Door Two</button>
+<div *ngIf="roomNumber == 3">
+  <p></p>
+</div>

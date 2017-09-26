@@ -1,3 +1,16 @@
-<p>
-  friendly-room works!
-</p>
+<div *ngIf="roomNumber == 1">
+  <p>While exploring a massive and promising cavern, you come upon an old and haggard man.</p>
+  <p>"Please, help me! I am in need of sustenance..."</p>
+  <p>With limited torchlight left, you can choose to either look around the cavern for food, or you can choose to leave the man and instead continue searching for useful items.</p>
+
+  <button (click)="helpOldMan()">Help the Old Man</button>
+  <button (click)="continueSearching()">Continue searching for treasure</button>
+</div>
+
+<div *ngIf="roomNumber == 2">
+  <p></p>
+</div>
+
+<div *ngIf="roomNumber == 3">
+  <p></p>
+</div>
